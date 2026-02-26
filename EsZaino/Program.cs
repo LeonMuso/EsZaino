@@ -19,7 +19,8 @@ namespace EsZaino
                 {
                     zaino.Stampa();
 
-                    if (migliore == null || zaino.PesoAttuale > migliore.PesoAttuale || zaino.ValoriPresi.Count > migliore.ValoriPresi.Count)
+                    if (migliore == null || zaino.PesoAttuale > migliore.PesoAttuale ||
+                        zaino.ValoriPresi.Count > migliore.ValoriPresi.Count)
                     {
                         migliore = CopiaZaino(zaino);
                     }
