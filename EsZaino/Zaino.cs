@@ -23,7 +23,10 @@ namespace EsZaino
         {
             Console.Write("Peso: " + PesoAttuale + " | Valori: ");
             foreach (int v in ValoriPresi)
+            {
                 Console.Write(v + " ");
+            }
+            
             Console.WriteLine();
         }
     }

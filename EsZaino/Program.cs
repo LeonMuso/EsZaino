@@ -15,13 +15,10 @@ namespace EsZaino
 
             if (indice == valori.Length)
             {
-               
                 if (zaino.PesoAttuale > 0)
                 {
-                    
                     zaino.Stampa();
 
-                    
                     if (migliore == null || zaino.PesoAttuale > migliore.PesoAttuale || zaino.ValoriPresi.Count > migliore.ValoriPresi.Count)
                     {
                         migliore = CopiaZaino(zaino);
@@ -31,10 +28,8 @@ namespace EsZaino
                 return;
             }
 
-            
             GeneraAlbero(valori, indice + 1, CopiaZaino(zaino));
 
-            
             if (zaino.PesoAttuale + valori[indice] <= zaino.CapacitaMassima)
             {
                 Zaino zainoSi = CopiaZaino(zaino);
